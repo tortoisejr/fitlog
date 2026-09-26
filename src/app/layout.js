@@ -33,8 +33,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className="min-h-full flex flex-col bg-black">
         <Nav></Nav>
-        {children}</body>
+        <div>{children}</div>
         <Footer></Footer>
+        </body>
+        
     </html>
   );
 }

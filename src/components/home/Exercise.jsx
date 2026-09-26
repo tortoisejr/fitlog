@@ -36,15 +36,15 @@ function Exercise({ eachExerData }) {
             <hr className=" w-full border opacity-10" />
             <div className="flex flex-row justify-start items-center gap-5 text-[10px] text-[#9ca3af]">
               <p className="space-x-1">
-                <i class="fa-regular fa-clock"></i>{" "}
+                <i className="fa-regular fa-clock"></i>{" "}
                 <span>{`${eachExerData.duration} min`}</span>
               </p>
               <p className="space-x-1">
-                <i class="fa-solid fa-fire"></i>{" "}
+                <i className="fa-solid fa-fire"></i>{" "}
                 <span>{`${eachExerData.calorisBurned} Kcal`}</span>
               </p>
               <p className="space-x-1">
-                <i class="fa-regular fa-star"></i>{" "}
+                <i className="fa-regular fa-star"></i>{" "}
                 <span>{`${eachExerData.rating}`}</span>
               </p>
             </div>
