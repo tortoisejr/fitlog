@@ -24,7 +24,7 @@ function Nav() {
     </>
   );
   return (
-    <div className=" bg-black">
+    <div className=" bg-black sticky">
       <section className="container mx-auto  ">
         <div className="navbar shadow-sm">
           <div className="navbar-start">
@@ -55,8 +55,15 @@ function Nav() {
               </ul>
             </div>
             <Link className=" text-xl flex flex-row gap-3" href="./">
-              <Image src={logo} alt="logo Photo" width="auto" height="auto" />
-              <span className="font-bold text-white text-2xl">FITLOG</span>
+              <Image
+                src={logo}
+                alt="logo Photo"
+                className="h-8 w-auto"
+                loading="eager"
+              />
+              <span className="font-bold text-white text-2xl hidden lg:block">
+                FITLOG
+              </span>
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex ">
@@ -78,6 +85,7 @@ function Nav() {
           </div>
         </div>
       </section>
+      <hr className="opacity-20" />
     </div>
   );
 }
