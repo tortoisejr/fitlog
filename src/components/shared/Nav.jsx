@@ -26,7 +26,7 @@ function Nav() {
     </>
   );
   return (
-    <div className=" bg-black sticky">
+    <div className=" bg-black sticky top-0 z-50 ">
       <section className="container mx-auto  ">
         <div className="navbar shadow-sm">
           <div className="navbar-start">
