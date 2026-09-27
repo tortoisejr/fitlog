@@ -3,7 +3,7 @@ import Link from "next/link";
 function Exercise({ eachExerData }) {
   return (
     <div className=" px-1">
-      <Link href="#">
+      <Link href={`/${eachExerData.id}`}>
         <div className="card bg-base-100  shadow-sm w-87 lg:w-full hover:outline-2 hover:outline-blue-500">
           <figure>
             <div className=" h-45 lg:h-62.5 w-100 overflow-hidden">

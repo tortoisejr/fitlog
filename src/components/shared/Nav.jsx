@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../assets/logo.png";
+import NavPlaned from "./NavPlaned";
+import NavSaved from "./NavSaved";
 
 function Nav() {
   const links = (
@@ -70,18 +72,8 @@ function Nav() {
             <ul className="menu menu-horizontal px-1">{links}</ul>
           </div>
           <div className="navbar-end flex flex-row gap-4 text-[14px]">
-            <Link href="./MyPlan" className="flex flex-row gap-2">
-              <span>Plan</span>
-              <span className="text-black bg-[#c2f800] flex h-6 w-6 items-center justify-center rounded-full">
-                0
-              </span>
-            </Link>
-            <Link href="./MyPlan" className="flex flex-row gap-2">
-              <span>Saved</span>
-              <span className="text-white border border-amber-50 flex h-6 w-6 items-center justify-center rounded-full">
-                0
-              </span>
-            </Link>
+            <NavPlaned></NavPlaned>
+            <NavSaved></NavSaved>
           </div>
         </div>
       </section>

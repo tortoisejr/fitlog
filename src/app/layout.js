@@ -1,6 +1,9 @@
 import Footer from "@/components/shared/Footer";
 import Nav from "@/components/shared/Nav";
+import ExerciseProvider from "@/Contexts/ExerciseContext";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -32,10 +35,13 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-full flex flex-col bg-black">
-        <Nav></Nav>
-        <div>{children}</div>
-        <Footer></Footer>
-        </body>
+        <ExerciseProvider>
+          <Nav></Nav>
+          <div>{children}</div>
+          <Footer></Footer>
+          <ToastContainer />
+        </ExerciseProvider>
+      </body>
         
     </html>
   );

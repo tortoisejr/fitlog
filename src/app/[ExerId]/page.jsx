@@ -153,8 +153,8 @@ async function page({ params }) {
             </div>
             {/* button */}
             <div className="flex flex-col items-center lg:items-start lg:flex-row gap-3">
-              <PlanButton></PlanButton>
-              <SaveButton></SaveButton>
+              <PlanButton ExerDetails={ExerDetails}></PlanButton>
+              <SaveButton ExerDetails={ExerDetails}></SaveButton>
             </div>
           </div>
         </div>
