@@ -10,7 +10,7 @@ function Nav() {
       <li className="rounded-3xl bg-[#1a2312] px-1">
         <Link
           className=" font-bold text-lime-500 text-[12px] hover:bg-transparent hover:shadow-none "
-          href="#"
+          href="/"
         >
           Workouts
         </Link>

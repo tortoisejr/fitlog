@@ -2,9 +2,7 @@ import Exercise from "@/components/home/Exercise";
 
 async function fetchData() {
   try {
-    const response = await fetch(
-      "https://api.api-store.workers.dev/api/fitlog",
-    );
+    const response = await fetch("https://api.abcz.workers.dev/api/fitlog");
     const data = await response.json();
     return data;
   } catch (err) {

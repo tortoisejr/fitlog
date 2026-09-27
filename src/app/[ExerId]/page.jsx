@@ -4,9 +4,7 @@ import Image from "next/image";
 
 async function fetchData() {
   try {
-    const response = await fetch(
-      "https://api.api-store.workers.dev/api/fitlog",
-    );
+    const response = await fetch("https://api.abcz.workers.dev/api/fitlog");
     const result = await response.json();
     return result;
   } catch (err) {
