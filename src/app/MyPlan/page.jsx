@@ -1,5 +1,7 @@
 "use client";
 
+import SavePlanRender from "@/components/MyPlan/SavePlanRender";
+import TodayPlanRender from "@/components/MyPlan/TodayPlanRender";
 import { ExerciseContext } from "@/Contexts/ExerciseContext";
 import { useContext, useEffect, useState } from "react";
 
@@ -60,7 +62,7 @@ function MyPlan() {
   }
 
   return (
-    <div className="container mx-1 lg:mx-auto mt-10">
+    <div className="container mx-1 lg:mx-auto mt-5 lg:mt-10">
       <h1 className="text-2xl text-white font-bold">MY PLAN</h1>
       <p className="text-[#5f6570] text-[12px]">
         Cap of five lifts for today. Finish them, then load more.
@@ -138,11 +140,11 @@ function MyPlan() {
         </div>
 
         {/* Content */}
-        <div className="flex min-h-45 w-full items-center justify-center rounded-xl border border-dashed border-white/10 bg-[#0f1115] sm:min-h-52.5 lg:min-h-56.25">
+        <div className="w-full h-auto">
           {activeTab === "plan" ? (
-            <div className="text-sm text-white sm:text-base">Plan</div>
+            <TodayPlanRender sortBy={sortBy}></TodayPlanRender>
           ) : (
-            <div className="text-sm text-white sm:text-base">Saved</div>
+            <SavePlanRender sortBy={sortBy}></SavePlanRender>
           )}
         </div>
       </section>
