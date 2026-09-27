@@ -4,9 +4,6 @@ async function fetchData() {
   try {
     const response = await fetch(
       "https://api.api-store.workers.dev/api/fitlog",
-      {
-        cache: "no-cache",
-      },
     );
     const data = await response.json();
     return data;
